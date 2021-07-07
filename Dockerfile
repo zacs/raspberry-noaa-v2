@@ -14,7 +14,7 @@ RUN git clone https://github.com/jekhokie/raspberry-noaa-v2.git \
   && cd raspberry-noaa-v2/
 
 COPY install_and_upgrade.sh /install_and_upgrade.sh
-COPY config/settings.yml /config/settings.yml
+COPY config/settings.yml.sample /config/settings.yml
 RUN chmod +x /install_and_upgrade.sh
 RUN chmod 700 /config/settings.yml
 
